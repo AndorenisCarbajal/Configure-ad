@@ -5,7 +5,7 @@
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
 This Project outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
-Active Directory enables you to manage devices and provides a more effective way to control access to resources on a large scale—anything from Accounts, Passwords, Permissions, etc.
+Active Directory enables you to manage devices and provides a more effective way to control access to resources on a large scale—anything from Accounts, Passwords, Permissions, etc. Using our Microsoft Azure VMs, we will log into Remote Desktop and install Active Directory in our virtual machine created.
 <br />
 
 <h2>Environments and Technologies Used</h2>
