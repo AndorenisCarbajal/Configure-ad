@@ -25,29 +25,41 @@ Active Directory enables you to manage devices and provides a more effective way
 - Step 1: Install Active Directory
 - Step 2: Create a Domain Admin user within the domain
 - Step 3: Join Client-1 to your domain (mydomain.com)
+- Step 4: Set up Remote Desktop for non-administrative users on Client-1
+- Step 5: Create a bunch of additional users and attempt to log into client-1 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+Install Active Directory: <br/>  
+<img width="450" alt="1 Installing Active Directoy on DC-1 vm" src="https://github.com/user-attachments/assets/f570b89c-00ca-47ff-9cd8-bf9e49fcd9e7" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log in to DC-1 and install Active Directory Domain Services. Promote as a DC: Set up a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center">
+Employees & Admins Organizational units : <br/>
+<img width="450" alt="2 Domain Admins created _EMPLOYEES, _ADMINS" src="https://github.com/user-attachments/assets/4f7a2c7a-17d5-4d6b-8e10-e391afd29b43" />
+<p align="center">
+Create a Domain Admin user within the domain: <br/>  
+<img width="450" alt="3  security group Domain Admins" src="https://github.com/user-attachments/assets/4b5e2e86-52cc-443e-a86f-0435c2e83a10" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Active Directory Users and Computers, create an organizational unit called employees. And then create another organizational unit for Admins. Then, create a Domain Admin user within the domain. In this case, we used Jane Doe and added her to the security group "Domain Admins.</p> 
+<br />
+
+<p align="center">
+Join Client-1 to your domain (mydomain.com): <br/>
+<img width="450" alt="4  Client-1 added to clients on active directory on DC-1" src="https://github.com/user-attachments/assets/397f4c99-f87a-42f2-bf76-5c9714f1f351" />
+</p>
+<p>
+Create a new Organizational unit named clients, and then drag client-1 into the OU. Log in to the domain controller, and you need to verify that client-1 shows up in Active Directory Users and Computers.
 </p>
 <br />
+
+<p align="center">
+
+</P>
