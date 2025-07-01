@@ -84,7 +84,7 @@ Log in as client-1, the user created in my example Bag.Sato: <br/>
 <img width="450" alt="7 Logged into Client-1 with one of the accounts" src="https://github.com/user-attachments/assets/53eeea59-193d-4d14-a49e-537d1b94b889" />
 </p>
 <p>
-Once the accounts have been created, open ADUC and observe the accounts and attempt to log into client-1 with one of the accounts. You should have succeeded in logging in.
+Once the accounts have been created, you should be able to open ADUC and observe the accounts, and then attempt to log into client-1 with one of the accounts. You should have succeeded in logging in.
 </p>
 <br/>
 </P>
