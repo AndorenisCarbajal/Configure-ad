@@ -61,5 +61,31 @@ Create a new Organizational unit named clients, and then drag client-1 into the 
 <br />
 
 <p align="center">
+Set up Remote Desktop for non-administrative users on Client-1: <br/>  
+<img width="450" alt="5  allowing domain users to remote desktop" src="https://github.com/user-attachments/assets/f31843a9-48fb-4fc4-bb0e-86d2dc2e7513" />
+</p>
+<p>
+Log into Client-1 as mydomain.com\user created
+Open system properties
+Click “Remote Desktop.”
+Allow “domain users” access to the remote desktop
+You can now log into Client-1 as a normal, non-administrative user.
+</p>
+<br/>
 
+<h4>Create a bunch of additional users and attempt to log into client-1 with one of the users</h4>
+<p align="center">
+Observe the accounts created: <br/>
+<img width="450" alt="6 observe the accounts being created" src="https://github.com/user-attachments/assets/55f5f4c8-894f-41fa-8353-0905060fab4c" />
+<P>
+You should log in to the user created and run PowerShell as an administrator. Create a file and paste the contents of the script into it, and then run the script and observe the accounts being created.
+</P>
+<p align="center">
+Log in as client-1, the user created in my example Bag.Sato: <br/>
+<img width="450" alt="7 Logged into Client-1 with one of the accounts" src="https://github.com/user-attachments/assets/53eeea59-193d-4d14-a49e-537d1b94b889" />
+</p>
+<p>
+Once the accounts have been created, open ADUC and observe the accounts and attempt to log into client-1 with one of the accounts. You should have succeeded in logging in.
+</p>
+<br/>
 </P>
