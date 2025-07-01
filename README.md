@@ -22,10 +22,9 @@ Active Directory enables you to manage devices and provides a more effective way
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Install Active Directory
+- Step 2: Create a Domain Admin user within the domain
+- Step 3: Join Client-1 to your domain (mydomain.com)
 
 <h2>Deployment and Configuration Steps</h2>
 
